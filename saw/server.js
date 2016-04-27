@@ -14,11 +14,7 @@ var MainHelper = require("./routes/helpers/main_helper.js");
 
 // Load main routes into app
 require('./routes/main')(app, request, MainHelper);
-
-app.get('/', function (req, res) {
-  res.send('Hello and welcome to our dipatcher tool')
-})
  
-http.listen(3001,function(){
-    console.log("Connected & Listen to port 3001 Internally");
+http.listen(3002,function(){
+    console.log("Connected & Listen to port 3002 Internally");
 });

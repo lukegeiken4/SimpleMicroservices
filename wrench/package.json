@@ -4,6 +4,7 @@
   	"description": "API ax that does only what an ax should do and notifies when that is done",
   	"repository": "https://github.com/lukegeiken4/SimpleMicroservices",
   	"dependencies": {
+		"body-parser": "^1.15.0",
 		"express" : "^4.13.3",
 		"jasmine-node" : "^1.3.1",
 		"request": "^2.69.0" 

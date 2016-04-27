@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-
+var bodyParser = require('body-parser');
 /*
 *	Documentation for http node module
 *	https://nodejs.org/api/http.html
@@ -12,13 +12,11 @@ var request = require('request');
 // Helper Objects
 var MainHelper = require("./routes/helpers/main_helper.js");
 
+app.use(bodyParser.json());
 // Load main routes into app
 require('./routes/main')(app, request, MainHelper);
 
-app.get('/', function (req, res) {
-  res.send('Hello and welcome to our dipatcher tool')
-})
  
-http.listen(3001,function(){
-    console.log("Connected & Listen to port 3001 Internally");
+http.listen(3000,function(){
+    console.log("Connected & Listen to port 3000 Internally");
 });
